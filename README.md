@@ -91,20 +91,5 @@
 	</div>
 	<p>Copyright © 2024 KBIT TKIT AL-FATH. Made by Hilyah Anugerah Kinanti. </p>
 </section>
-
-<!------JS------>
-<script>
-
-	var navLinks=document.getElemenById("navLinks");
-	
-	function showMenu(){
-		navLinks.style.right="0";
-	}
-	
-	function hideMenu(){
-		navLinks.style.right="-200px";
-	}
-	
-</script>
 </body>
 </html>
