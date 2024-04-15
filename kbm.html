@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>KBTK IT Al-Fath</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<section class="sub-header" id="home">
+	<nav>
+		<a href="index.html"><img src="image/logo.png"</a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa-solid fa-xmark fa-xl"id="close"style="color: #ffffff;" onclick="hideMenu"()></i>
+			<ul>
+			<li><a href="Web TKIT Al-Fath.html">Beranda</a></li>
+			<li><a href="tentangkami.html">Tentang Kami</a></li>
+			<li><a href="kbm.html">Kegiatan Pembelajaran</a></li>
+			<li><a href="kontak.html">Kontak</a></li>
+			</ul>
+		</div>
+		<i class="fa-solid fa-bars fa-xl"id="menu"style="color: #ffffff;"onclick="showMenu"()></i>
+	</nav>
+
+<div class="text-box">
+	<h1>Kegiatan Belajar Mengajar</h1>
+</div>
+	</section>
+
+<!------KBM------>
+<section>
+<div class="galeri-wrap">
+	<i class="fa-solid fa-angles-left fa-2xl" id="back-btn" style="color: #ffa200;"></i>
+	<div class="galeri">
+		<div 1>
+		<span><img src="image/kbm1.jpg"></span>
+		<span><img src="image/kbm2.jpg"></span>
+		<span><img src="image/kbm3.jpg"></span>
+		</div>	
+		<div>
+		<span><img src="image/kbm4.jpg"></span>
+		<span><img src="image/kbm5.jpg"></span>
+		<span><img src="image/kbm6.jpg"></span>
+		</div>
+	</div>
+	<i class="fa-solid fa-angles-right fa-2xl" id="next-btn" style="color: #ffa200;"></i>
+</div>
+</section>
+
+<section>
+<div class="runningtext">
+<h3><marquee direction="left">Libur Hari Raya Idul Fitri 29 Maret-17 April 2024  -  18 April Jam Pembelajaran Kembali Normal - Segala pembayaran SPP/Tabungan bisa dilakukan sejak hari pertama masuk sekolah. </marquee></h3>
+</div>
+</section>
+
+<!------Footer------>
+<section class="footer">
+	<h4>Ikuti Media Sosial Kami</h4>
+	
+	<div class="icons">
+	<a href="https://www.facebook.com/kb.alfath">
+		<i class="fa-brands fa-facebook fa-xl" style="color: #000000;"></i>
+		</a>
+	<a href="https://www.instagram.com/tk_al_fath_jember?igsh=eDhwOGExYzNxbjB6">
+		<i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i>
+		</a>
+	<a href="https://youtube.com/@alfathcenter3108?si=RQ2RSqTBh-C31jE-">
+		<i class="fa-brands fa-youtube fa-xl" style="color: #000000;"></i>
+		</a>
+	</div>
+	<p>Copyright © 2024 KBIT TKIT AL-FATH. Made by Hilyah Anugerah Kinanti. </p>
+</section>
+
+<!------JS------>
+<script>
+
+	var navLinks=document.getElemenById("navLinks");
+	
+	function showMenu(){
+		navLinks.style.right="0";
+	}
+	
+	function hideMenu(){
+		navLinks.style.right="-200px";
+	}
+	
+</script>
+
+<script>
+
+	let scrollContainer = document.querySelector(".galeri");
+	let back-btn = document.getElemenById("back-btn");
+	let next-btn = document.getElemenById("next-btn");
+	
+	scrollContainer.addEventListener("wheel",(evt)=>{evt.preventDefault();
+	scrollContainer.scrollleft+= evt.deltaY;})
+	
+	next-btn.addEventListener("click",()=>{scrollContainer.scrollleft += 900;});
+	back-btn.addEventListener("click",()=>{scrollContainer.scrollleft -= 900;});
+</script>
+</body>
+</html>

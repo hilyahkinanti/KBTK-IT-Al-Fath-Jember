@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>KBTK IT Al-Fath</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<section class="sub-header" id="home">
+	<nav>
+		<a href="index.html"><img src="image/logo.png"</a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa-solid fa-xmark fa-xl"id="close"style="color: #ffffff;" onclick="hideMenu"()></i>
+			<ul>
+			<li><a href="Web TKIT Al-Fath.html">Beranda</a></li>
+			<li><a href="tentangkami.html">Tentang Kami</a></li>
+			<li><a href="kbm.html">Kegiatan Pembelajaran</a></li>
+			<li><a href="kontak.html">Kontak</a></li>
+			</ul>
+		</div>
+		<i class="fa-solid fa-bars fa-xl"id="menu"style="color: #ffffff;"onclick="showMenu"()></i>
+	</nav>
+
+<div class="text-box">
+	<h1>Kontak & Alamat</h1>
+</div>
+	</section>
+	
+<!------Lokasi------>
+<section class="lokasi">
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.054892895393!2d113.64281020000001!3d-8.197225299999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd69168694d5c25%3A0x50c67e871a13950!2sTK%20AL-FATH%20Jember!5e0!3m2!1sen!2sid!4v1713100926650!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	
+</section>
+
+<!------Kontak------>
+<section class="kontak">
+	<div class="row">
+		<div class="kontak-col">
+			<div>
+			<i class="fa-solid fa-location-dot fa-xl" style="color: #000000;"></i>
+			<span>
+			<h3>Alamat</h3>
+			<p>Perum Griya Mangli Indah Blok J 5-8, Wonosari, Mangli, Kec. Kaliwates, Kabupaten Jember, Jawa Timur.</p>
+			</span>
+			</div>
+			<div>
+			<i class="fa-solid fa-phone fa-xl" style="color: #000000;"></i>
+			<span>
+			<h3>Telepon</h3>
+			<p>Senin-Sabtu, 07.00 WIB-11.00 WIB</p>
+			<p>+62 823 3010 0893</p>
+			</span>
+			</div>
+			<div>
+			<i class="fa-solid fa-envelope fa-xl" style="color: #000000;"></i>
+			<span>
+			<h3>Gmail</h3>
+			<p>alfathcenterjember@gmail.com</p>
+			</span>
+			</div>
+			
+			<div class="kontak-col">
+			
+			<form action="">
+				<input type="text" placeholder="Ketik nama Anda"required>
+				<input type="email" placeholder="Ketik alamat email Anda"required>
+				<input type="text" placeholder="Ketik pesan Anda"required>
+				<textarea rows="8" placeholder="Pesan, Kritik dan Saran"required></textarea>
+				<button type="submit"class="red-btn">Kirim Pesan</button>
+			</form>
+			
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!------Footer------>
+<section class="footer">
+	<h4>Ikuti Media Sosial Kami</h4>
+	
+	<div class="icons">
+	<a href="https://www.facebook.com/kb.alfath">
+		<i class="fa-brands fa-facebook fa-xl" style="color: #000000;"></i>
+		</a>
+	<a href="https://www.instagram.com/tk_al_fath_jember?igsh=eDhwOGExYzNxbjB6">
+		<i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i>
+		</a>
+	<a href="https://youtube.com/@alfathcenter3108?si=RQ2RSqTBh-C31jE-">
+		<i class="fa-brands fa-youtube fa-xl" style="color: #000000;"></i>
+		</a>
+	</div>
+	<p>Copyright © 2024 KBIT TKIT AL-FATH. Made by Hilyah Anugerah Kinanti. </p>
+</section>
+
+<!------JS------>
+<script>
+
+	var navLinks=document.getElemenById("navLinks");
+	
+	function showMenu(){
+		navLinks.style.right="0";
+	}
+	
+	function hideMenu(){
+		navLinks.style.right="-200px";
+	}
+	
+</script>
+</body>
+</html>
